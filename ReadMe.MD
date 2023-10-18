@@ -34,7 +34,7 @@ As a sophomore pursuing a B.Tech in Computer Science and Engineering at Indira G
 
 To run this website locally, you need a web browser, such as Google Chrome, Firefox, or Safari.
 
-##Contact
+## Contact
 
 Feel free to reach out to me for any inquiries, collaborations, or just to say hello:
 
