@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shweta's Personal Portfolio</title> 
+    <link rel = "stylesheet" href="style.css"> <!helps to connect the html file with the css file>
+    <script src="https://kit.fontawesome.com/214b33defb.js" crossorigin="anonymous"></script> <!for adding little icons on my experience tabs>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+    <nav> <!provides navigation functionality>
+     <img src="images/logo.png" width="150" height="30" alt="logo" class="logo">
+     <ul id="sidemenu"> <! unordered list> 
+        <li> <a href="#header">Home</a> </li>
+          <li><a href="#about">About</a></li>
+         <li><a href="#experience">Experience</a></li> 
+          <li> <a href="#portfolio">Portfolio</a></li> 
+         <li> <a href="#contact">Contact</a> </li>
+         <i class="fa-solid fa-times" onclick="closemenu()"></i>
+        </ul>
+     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="header-text"> <!for title/content in the main area of the web page>
+      <p>CompSci Undergraduate</p>
+      <h1>Hi. I'm <span>SHWETA</span> TYAGI</h1> <!if some text is too long add a line break where needed>
+    </div>
+ </div>
+</div>
+
+<!-----------------ABOUT SECTION CODE--------------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="images/user.jpg" width="450" height="550" alt="user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I'm Shweta Tyagi, a sophomore at Indira Gandhi Delhi Technical University, where I'm pursuing a B.Tech in Computer Science and Engineering. My journey in the world of technology has been an exciting one. <br>
+
+                    I've honed my skills in multiple programming languages like C++, C and C#. <br> I'm well-versed in software tools such as Unity and Figma. I'm currently immersing myself in the dynamic field of web development, mastering the intricacies of HTML, CSS, and JavaScript.<br>
+                    
+                    Beyond my coursework, I've dedicated time to research in the field of Machine Learning, exploring models like AHP and COPRAS. My passion for technology fuels my relentless pursuit of knowledge and growth.<br>
+                    
+                    As a determined and diligent individual, I thrive on challenges and am always eager to learn new things. I'm excited to embark on a fulfilling career in software engineering, and I can't wait to share my journey and projects with you on this website.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Data Structures and Algorithms</span><br>C++ / C </li>
+                    <li><span>Web Development</span><br>HTML, CSS, Figma</li>
+                    <li><span>Game Development</span><br>Unity, C#</li>
+                
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022-2026</span><br>BTech-Computer Science and Engineering,<br>Indira Gandhi Delhi Technical University for Women</li>
+                    <li><span>2020-2022</span><br>Daffodil Public School</li>
+                    <li><span>2020</span><br>Presentation Convent Sr. Sec. School</li>
+                
+                </ul>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------EXPERIENCE-------------->
+
+<div id="experience">
+    <div class="container">
+     <h1 class="sub-title">Experience</h1>
+      <div class="experience-list">
+
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Head-Coordinator, Innerve, Jul 2023 - present</h2>
+            <p>-Innerve: Official Technical Fest Indira Gandhi Delhi Technical University For Women<br>
+            -Head-coordinator CS/IT Team<br>
+        -Responsibilities: <br>
+        i) game Development using Unity and C#  <br>
+        ii) Video Editing <br>
+        -Skills:
+         C#, Unity, Game Development, Game Design, Video Editing, Teamwork</p>
+            <a href="#"></a> <!can add link to the game>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-book-open-reader"></i>
+            <!icon code>
+            <h2>Outreach Associate, Minerva, Jan 2023 - present</h2>
+            <p>-Minerva : Technical Society, Indira Gandhi Delhi Technical University for Women <br>
+                -Seminars and hands-on sessions about latest technological advancements.<br>
+                -Outreach Team<br>
+                -Skills: Research Skills, Eloquence, Teamwork</p>
+            <a href="#"></a>  <!can add research paper link>
+        </div>
+
+       
+
+        <div>
+            <i class="fa-solid fa-globe"></i>
+            <h2>Campus Director, Millennium Fellowship 2023, United Nation Academic Impact</h2>
+            <p>
+                -The Millennium Fellowship Program is a prestigious program that provides students with the
+                opportunity to develop their leadership skills and make a positive impact on the world.<br>
+                -Selected as a Millennium Fellow 2023 among 4000+ others globally out of the 44,000 applicants.<br>
+                -In this fellowship, I am working on a project through which I aim to
+                create awareness about combatting bullying.<br>
+                -Also, as 1 of the two Campus Directors, I am responsible for leading my University’s MCN cohort
+                comprising of 15 fellows.
+                </p>
+            <a href="#"></a> <!LINK to certi?>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-book"></i>
+            <h2>Student Mentor, Desh ke Mentor, Govt. of Delhi, Nov 2022 - Apr 2023</h2>
+            <p>-Desh Ke Mentor : Mentorship program run by Government of Delhi<br>
+                -Mentored 4 high school students<br>
+                -Academic guidance, Career guidance and counselling<br>
+                -Skills: Mentoring · Student Counseling</p>
+            <a href="#"></a> <!LINK to certi?>
+        </div>
+
+
+      </div>
+    </div>
+
+</div>
+
+<!----------------------PORTFOLIO---------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg" alt="work-1">
+                <div class="layer">
+                    <h3>Mystic Shores: Family Reunion Adventure</h3>
+                    <p> "Mystic Shores" is an intense action-adventure game where players step into the boots of a resilient mariner who, along with his family, becomes tragically separated during a relentless storm. The game unfolds as players guide the mariner through challenging battles at distinct locations. Saving a family member with each victorious encounter, he secures a map that provide clues to locate the others. The game offers a gripping blend of combat, storytelling, and emotional depth as players strive to reunite a fractured family.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg" alt="work-2">
+                <div class="layer">
+                    <h3>Shweta's Personal Portfolio</h3>
+                    <p>Welcome to Shweta's Personal Portfolio Website – a dynamic showcase of her skills and creativity crafted with the power of HTML, CSS, and JavaScript.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+           
+        </div>
+
+        <! if there are more projects take this see more button out of the comments and add class="btn" after "#" in the first bracket>
+        <a href="#" ></a>
+        
+        
+    </div>
+</div>
+
+<!-----------------CONTACT----------------->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1>
+               <p> <i class="fa-solid fa-paper-plane"></i>shweta.tyagi0504@gmail.com</p>
+               <div class="social-icons">
+                <a href="https://www.linkedin.com/in/shwetatyagi22/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/ShwetaTyagi1"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/shwetargh"><i class="fa-brands fa-square-x-twitter"></i></a>
+               </div>
+                 <a href="images/SHWETA TYAGI (1).pdf"  download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#169 shweta. </p>
+    </div>
+</div>
+
+<script> 
+     var tablinks=document.getElementsByClassName("tab-links");
+     var tabcontents=document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+
+</script>
+
+<script>
+  var sidemenu=document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzWT-bb5_pgic8LRvUKD35PviP8eVh58tteMPawFERfZJgIShZIknOmTFgIeXdZS8Au/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML="Message sent successfully"
+    setTimeout(function(){
+        msg.innerHTML=""
+    }, 5000) 
+    form.reset()})
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,481 @@
+* {
+    margin: 0; /*border width*/
+    padding: 0; /*space from border to elements */
+    font-family: 'Poppins', sans-serif; /*specifies font for the application */
+    box-sizing: border-box; /*sizing of elements, their width and height, will depend on marging, padding */
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000000;
+    color: #fff;
+}
+#header{    /*header is an id here*/
+     width: 100%;
+     height: 100vh; /*"vh" stands for viewport height, which is a percentage unit relative to the height of the viewport or the browser window.*/
+     background-image: url(images/background.jpg);
+     background-size: 100% 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     padding: 8px;
+     margin: 0px 0px;
+     background-origin: content-box;
+ }
+.container{
+    padding: 0px 0%;
+    
+}
+
+nav{
+   display: flex;
+    align-items: center; /* Vertically centers items */
+    justify-content: space-between; /* Horizontally centers items */
+    flex-wrap: wrap; /* Allow items to wrap when there's not enough space */
+}
+
+.logo{
+    width: 140px 50px;
+}
+
+nav ul li {
+display: inline-block; /*horizontal inline*/
+list-style: none;
+margin: -20px 20px ;
+
+
+}
+
+nav ul li a { /*removing blue colour and underline from hyperlinks*/
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0; /*made 0 rn because we want it to appear only when we click on it, other than that it should disappear*/
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s; /*transition from no underline to line will take 0.5s after hovering on it*/
+}
+
+nav ul li a:hover::after{ /*code for makig line appear afer hovering*/
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 19%;
+    font-size: 30px;
+
+}
+
+.header-text h1{
+    font-size: 70px;
+    margin-top: -5px;
+}
+
+.header-text h1 span{
+    color: #ff004f;
+}
+
+/*----------------ABOUT SECTION CODE--------------------*/
+
+#about{
+    padding: 80px 0;
+    color: #fff;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+    margin-left: 30px;
+    margin-top: 70px;
+}
+
+.about-col-1 img{
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 50%;
+    margin-left: 0px;
+    margin-right: 130px;
+    margin-top: 60px;
+    
+}
+
+.about-col-2 h1{
+    padding-bottom: 15px;
+}
+
+.sub-title{
+     font-size: 60px;
+     font-weight: 600;
+     color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-contents ul li span{
+    color: #b3063c;
+    font-size: 14px;
+
+}
+
+.tab-contents{
+    display: none;
+
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*-------------------experience---------------*/
+
+#experience{
+    padding: 30px 30px;
+}
+
+.experience-list{
+    display: grid; 
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+} 
+
+.experience-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-bottom: 10px;
+    border-radius: 10px; /*corners of tab are round?
+    transition: background 0.5s, transform 0.5s ; /*so that when we hover on the tab it moves upwards and colour changes, this is in reference to the hover function i wrote below*/
+}
+
+.experience-list div i{
+    font-size: 40px;
+    margin-bottom: 30px;
+
+}
+
+.experience-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.experience-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.experience-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+
+}
+
+/*-------------Portfolio-----------*/
+#portfolio{
+    padding: 50px 30px;
+    
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s ;
+}
+
+.layer{ /*for displaying description text on tab in portfolio section*/
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.layer h3{ /*displaying heading text*/
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.layer a{ /*for link icon*/
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: max-content; 
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #ff004f;
+
+}
+
+/*-------------------contact-----------------*/
+.contact-left{
+    flex-basis: 35%;
+    padding: 0 30px;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+   color: #ff004f;
+   margin-right: 15px;
+   margin-left: 10px;
+   font-size: 20px;
+}
+
+.social-icons{
+    margin-top: 30px;
+    margin-left: 10px;  
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab ;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px); /*moves 5 px up*/
+
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 90%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/*-----------css for small screen--------*/
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 17px;
+    }
+
+    .header-text h1{
+        font-size: 40px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+
+    }
+    
+ .sub-title{
+    font-size: 40px;
+
+ }
+
+ .about-col-1{
+    padding-left: 42px;
+    margin-bottom: -20px;
+ }
+
+ .about-col-1, .about-col-2{
+    flex-basis: 100%;
+ }
+
+
+ .about-col-2{
+    font-size: 14px;
+    padding-left: 75px;
+ }
+
+ .about-col-2 h1{
+    padding-bottom: 20px;
+    
+ }
+
+ .tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+ }
+
+ .contact-left, .contact-right{
+    flex-basis:100%;
+ }
+ 
+ .copyright{
+    font-size: 14px;
+ }
+
+ #msg{
+    color: #ffea2c;
+    margin-top: -40px;
+    display: block;
+ }
+}
