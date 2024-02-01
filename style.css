@@ -423,7 +423,14 @@ nav .fa-solid{
         margin-top: 6px;
         font-size: 35px;
     }
-  
+
+    /*
+    nav .fa-solid{
+        display:inline-table;
+        margin-left: 110px;
+        margin-top: -20px;
+        font-size: 20px;
+    }
     nav ul{
         background: #ff004f;
         position: fixed;
@@ -443,7 +450,7 @@ nav .fa-solid{
     }
 
     nav ul .fa-solid{
-        margin-left: 125px;
+        margin-left: px;
         position: absolute;
         top: 25px;
         margin-right: 20px;
@@ -455,6 +462,7 @@ nav .fa-solid{
        padding-top: 2%;
         margin-right: 425px;
     }
+    */
     
  .sub-title{
     font-size: 40px;
