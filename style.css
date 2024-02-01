@@ -392,7 +392,7 @@ form btn2{
 }
 
 /*-----------css for small screen--------*/
-/*nav .fa-solid{
+nav .fa-solid{
     display: none;
 }
 
@@ -478,72 +478,5 @@ form btn2{
     margin-top: -40px;
     display: block;
  }
-}*/
-
-/* Mobile Styles */
-body {
-    font-size: 16px; /* Adjust the font size for better readability on mobile devices */
 }
 
-/* Desktop Styles */
-@media only screen and (min-width: 600px) {
-    #header {
-        height: 70vh; /* Adjust the header height for desktop */
-    }
-
-    .header-text {
-        margin-top: 15%;
-        font-size: 40px;
-    }
-
-    .header-text h1 {
-        font-size: 70px;
-    }
-
-    .about-col-1 {
-        flex-basis: 45%; /* Adjust the width of about-col-1 for desktop */
-        margin-left: 30px;
-        margin-top: 50px;
-    }
-
-    .about-col-2 {
-        flex-basis: 45%; /* Adjust the width of about-col-2 for desktop */
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 40px;
-    }
-
-    .about-col-2 h1 {
-        padding-bottom: 15px;
-    }
-
-    .tab-links {
-        font-size: 18px; /* Adjust the font size of tab links for desktop */
-        margin-right: 30px;
-    }
-
-    .experience-list div {
-        padding: 40px 60px; /* Adjust the padding for desktop */
-    }
-
-    .work img {
-        width: 100%;
-    }
-
-    .btn {
-        margin: 70px auto; /* Adjust the margin for the button on desktop */
-    }
-
-    .contact-left {
-        flex-basis: 40%; /* Adjust the width of contact-left for desktop */
-        padding: 0 60px;
-    }
-
-    .contact-right {
-        flex-basis: 55%; /* Adjust the width of contact-right for desktop */
-    }
-
-    .copyright {
-        padding: 20px 0; /* Adjust the padding for the copyright section on desktop */
-    }
-}
