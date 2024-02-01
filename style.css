@@ -424,19 +424,21 @@ nav .fa-solid{
         font-size: 35px;
     }
     nav .fa-solid{
-        display: auto;
-        font-size: 25px;
+        display:inline-table;
+        margin-left: 110px;
+        margin-top: -20px;
+        font-size: 20px;
     }
     nav ul{
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
+        right: -80px;
+        width: 150px;
+        height: 90vh;
+        padding-top: px;
         z-index: 2;
-        transition: right 0.5s;
+        transition: right 0.4s;
     }
     
     nav ul li{
@@ -446,11 +448,17 @@ nav .fa-solid{
     }
 
     nav ul .fa-solid{
+        margin-left: 125px;
         position: absolute;
         top: 25px;
-        right: 25px;
+        margin-right: 20px;
         cursor: pointer;
 
+    }
+
+    .fa-solid{
+       padding-top: 2%;
+        margin-right: 425px;
     }
     
  .sub-title{
